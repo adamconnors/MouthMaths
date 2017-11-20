@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select tables to test:"/>
+
+    <LinearLayout style="@style/Row">
+        <ToggleButton
+            android:id="@+id/twos"
+            style="@style/ToggleButton"
+            android:textOff="2"
+            android:textOn="2" />
+
+        <ToggleButton
+            android:id="@+id/threes"
+            style="@style/ToggleButton"
+            android:textOff="3"
+            android:textOn="3"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Row">
+        <ToggleButton
+            android:id="@+id/fours"
+            style="@style/ToggleButton"
+            android:textOff="4"
+            android:textOn="4"/>
+
+        <ToggleButton
+            android:id="@+id/fives"
+            style="@style/ToggleButton"
+            android:textOff="5"
+            android:textOn="5"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Row">
+        <ToggleButton
+            android:id="@+id/sixes"
+            style="@style/ToggleButton"
+            android:textOff="6"
+            android:textOn="6"/>
+
+        <ToggleButton
+            android:id="@+id/sevens"
+            style="@style/ToggleButton"
+            android:textOff="7"
+            android:textOn="7"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Row">
+        <ToggleButton
+            android:id="@+id/eights"
+            style="@style/ToggleButton"
+            android:textOff="8"
+            android:textOn="8"/>
+
+        <ToggleButton
+            android:id="@+id/nines"
+            style="@style/ToggleButton"
+            android:textOff="9"
+            android:textOn="9"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Row">
+        <ToggleButton
+            android:id="@+id/tens"
+            style="@style/ToggleButton"
+            android:textOff="10"
+            android:textOn="10"/>
+
+        <ToggleButton
+            android:id="@+id/elevens"
+            style="@style/ToggleButton"
+            android:textOff="11"
+            android:textOn="11"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Row">
+        <ToggleButton
+            android:id="@+id/twelves"
+            style="@style/ToggleButton"
+            android:textOff="12"
+            android:textOn="12"/>
+        <ToggleButton
+            android:id="@+id/blank"
+            android:visibility="invisible"
+            style="@style/ToggleButton"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select number of questions:"/>
+
+    <EditText
+        android:id="@+id/numberOfQuestions"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="50dp"
+        android:text="30"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Start!"
+        android:id="@+id/start"/>
+
+</LinearLayout>

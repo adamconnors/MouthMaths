@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".TablesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questions remaining:"/>
+
+        <com.shoeboxscientist.mouthmaths.customviews.FlowLayout
+            android:id="@+id/questionIconView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="4dp"
+            android:minHeight="@dimen/counter_list_height"
+            verticalSpacing="10dp"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct answers:"/>
+
+        <com.shoeboxscientist.mouthmaths.customviews.FlowLayout
+            android:id="@+id/correctIconView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/counter_list_height"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="4dp"
+            verticalSpacing="10dp"
+            horizontalSpacing="2dp"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incorrect answers:"/>
+
+        <com.shoeboxscientist.mouthmaths.customviews.FlowLayout
+            android:id="@+id/wrongIconView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/counter_list_height"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="4dp"
+            verticalSpacing="10dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/questionContainerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/questionView"
+            android:textSize="60sp"
+            android:inputType="text"
+            android:text="11 x 11 = 121"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+
+    <com.shoeboxscientist.mouthmaths.customviews.GifView
+        android:id="@+id/spinnerView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/questionContainerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        src="@raw/listening" />
+
+    <ImageView
+        android:id="@+id/wrongView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splat"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/correctView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smiley"
+        android:scaleType="fitXY"
+        android:maxWidth="250dp"
+        android:maxHeight="250dp"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:alpha="0.7"/>
+
+    <TextView
+        android:id="@+id/messageView"
+        android:fontFamily="cursive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Round 1"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone"
+        android:textSize="90sp"/>
+
+    <TextView
+        android:id="@+id/incomingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="8sp"/>
+
+</RelativeLayout>

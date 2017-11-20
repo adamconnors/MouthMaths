@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/roundsTextView"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Rounds: "/>
+
+    <TextView
+        android:id="@+id/roundsCountView"
+        android:layout_below="@id/roundsTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textSize="80dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_height="wrap_content"
+        android:text="1"/>
+
+    <TextView
+        android:id="@+id/dooversTextView"
+        android:layout_below="@id/roundsCountView"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:text="Do overs: "/>
+
+    <TextView
+        android:id="@+id/dooverCountView"
+        android:layout_below="@id/dooversTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textSize="80dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_height="wrap_content"
+        android:text="1"/>
+
+
+    <TextView
+        android:id="@+id/commentView"
+        android:layout_below="@id/dooverCountView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Next time, try to get zero do overs!"/>
+
+
+    <Button
+        android:id="@+id/okay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Okay"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
