@@ -18,7 +18,7 @@ import android.widget.ImageView
 
 class TablesActivity : AppCompatActivity() {
 
-    val USE_TEST_RECOGNIZER = true
+    val USE_TEST_RECOGNIZER = false
 
     var recognizer: TestableSpeechRecognizer? = null
     var tablesEngine: TablesEngine? = null
