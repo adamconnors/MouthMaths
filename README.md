@@ -8,8 +8,7 @@ Mainly used as a mini-project to help me learn Kotlin & to help my son with his 
 <pre>
 git clone https://github.com/adamconnors/MouthMaths.git
 cd MouthMaths/
-export ANDROID_HOME='[path-to-your-android-sdk]'
+export ANDROID_HOME='[path-to-your-android-sdk]' (typically /users/$username/Library/Android/sdk)
 ./gradlew build
-adb connect Android.local
-adb install app/build/outputs/apk/app-debug.apk
+adb install app/build/outputs/apk/debug/app-debug.apk
 </pre>
